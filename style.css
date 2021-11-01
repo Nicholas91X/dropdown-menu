@@ -1,0 +1,61 @@
+nav {
+    width: 50%;
+}
+
+ul {
+    list-style: none;
+}
+
+.my_dropdown {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: bisque;
+}
+
+.my_pr {
+    padding-right: 1rem;
+}
+
+.my_pr-2 {
+    padding-right: 2rem;
+}
+
+.my_img_container {
+    height: 1rem;
+    width: 1rem;
+    position: relative;
+}
+
+.my_w10 {
+    width: 10%;
+}
+
+
+.my_img_hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+li:hover .my_dropdown {
+    display: inline-block;
+}
+
+li:hover .classic {
+    display: none;
+}
+
+li:hover .my_img_hover {
+    display: inline-block;
+}
+
+.debug header {
+    height: 50px;
+    background-color: aqua;
+    position: relative;
+}
