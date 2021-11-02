@@ -6,75 +6,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Dropdown Menu</title>
 </head>
 <body class="debug">
     <!-- inizio header -->
-    <header class="d-flex align-items-center">
-        <nav>
+    <header class="d-flex align-items-end justify-content-between">
+        <div class="logo">
+            <a href="#"><img src="img/play_logo.svg" alt=""></a>
+        </div>
+
+        <div class="d-lg-none my_burgler d-flex justify-content-center">
+            <i class="fas fa-bars"></i>
+            <div class="my_menu_hidden">
+                <ul>
+                    <li><a href="#">Giochi</a></li>
+                    <li><a href="#">Hardware</a></li>
+                    <li><a href="#">Servizi</a></li>
+                    <li><a href="#">Novità</a></li>
+                    <li><a href="#">Fai Acquisti</a></li>
+                    <li><a href="#">Supporto</a></li>
+                    <li><a href="#">My PlayStation</a></li>
+                    <li><a href="#">Accedi</a></li>
+                    <li><a href="#">Lens</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <nav class="d-none d-lg-inline-block sinistra">
             <ul class="d-flex">
-                <li class="my_pr">Giochi
+                <li class="my_pr d-flex align-items-center">Giochi
+                    <div class="ms-2 chevron">
+                        <img class="my_classic" src="img/chevron-down-solid.svg" alt=""><img class="my_hover" src="img/chevron-down-solid-hover.svg" alt="">
+                    </div>
                     <div class="my_dropdown">
-                    <ul class="d-flex justify-content-center">
-                        <li>prova</li>
-                        <li>prova</li>
-                    </ul>
+                        <ul class="d-flex justify-content-center">
+                            <li><a href="#"><img class="mx-1" src="img/play-menu-ico.png" alt=""></a></li>
+                            <li><a href="#"><img class="mx-1" src="img/play-menu-ico.png" alt=""></a></li>
+                        </ul>
                     </div>
                 </li>
-                <li class="my_pr">Hardware
+                <li class="my_pr d-flex align-items-center">Hardware
+                    <div class="ms-2 chevron">
+                        <img class="my_classic" src="img/chevron-down-solid.svg" alt=""><img class="my_hover" src="img/chevron-down-solid-hover.svg" alt="">
+                    </div>
                     <div class="my_dropdown">
-                    <ul class="d-flex justify-content-center">
-                        <li>prova</li>
-                        <li>prova</li>
-                    </ul>
+                        <ul class="d-flex justify-content-center">
+                            <li><a href="#"><img class="mx-1" src="img/play-menu-ico.png" alt=""></a></li>
+                            <li><a href="#"><img class="mx-1" src="img/play-menu-ico.png" alt=""></a></li>
+                        </ul>
                     </div>
                 </li>
-                <li class="my_pr">Servizi
+                <li class="my_pr d-flex align-items-center">Servizi
+                    <div class="ms-2 chevron">
+                        <img class="my_classic" src="img/chevron-down-solid.svg" alt=""><img class="my_hover" src="img/chevron-down-solid-hover.svg" alt="">
+                    </div>
                     <div class="my_dropdown">
-                    <ul class="d-flex justify-content-center">
-                        <li>prova</li>
-                        <li>prova</li>
-                    </ul>
+                        <ul class="d-flex justify-content-center">
+                            <li><a href="#"><img class="mx-1" src="img/play-menu-ico.png" alt=""></a></li>
+                            <li><a href="#"><img class="mx-1" src="img/play-menu-ico.png" alt=""></a></li>
+                        </ul>
                     </div>
                 </li>
-                <li class="my_pr">Novità
+                <li class="my_pr d-flex align-items-center">Novità
+                    <div class="ms-2 chevron">
+                        <img class="my_classic" src="img/chevron-down-solid.svg" alt=""><img class="my_hover" src="img/chevron-down-solid-hover.svg" alt="">
+                    </div>
                     <div class="my_dropdown">
-                    <ul class="d-flex justify-content-center">
-                        <li>prova</li>
-                        <li>prova</li>
-                    </ul>
+                        <ul class="d-flex justify-content-center">
+                            <li><a href="#"><img class="mx-1" src="img/play-menu-ico.png" alt=""></a></li>
+                            <li><a href="#"><img class="mx-1" src="img/play-menu-ico.png" alt=""></a></li>
+                        </ul>
                     </div>
                 </li>
-                <li class="my_pr">Fai Acquisti
+                <li class="my_pr d-flex align-items-center">Fai Acquisti
+                    <div class="ms-2 chevron">
+                        <img class="my_classic" src="img/chevron-down-solid.svg" alt=""><img class="my_hover" src="img/chevron-down-solid-hover.svg" alt="">
+                    </div>
                     <div class="my_dropdown">
-                    <ul class="d-flex justify-content-center">
-                        <li>prova</li>
-                        <li>prova</li>
-                    </ul>
+                        <ul class="d-flex justify-content-center">
+                            <li><a href="#"><img class="mx-1" src="img/play-menu-ico.png" alt=""></a></li>
+                            <li><a href="#"><img class="mx-1" src="img/play-menu-ico.png" alt=""></a></li>
+                        </ul>
                     </div>
                 </li>
-                <li class="my_pr">Supporto
+                <li class="my_pr d-flex align-items-center">Supporto
+                    <div class="ms-2 chevron">
+                        <img class="my_classic" src="img/chevron-down-solid.svg" alt=""><img class="my_hover" src="img/chevron-down-solid-hover.svg" alt="">
+                    </div>
                     <div class="my_dropdown">
-                    <ul class="d-flex justify-content-center">
-                        <li>prova</li>
-                        <li>prova</li>
-                    </ul>
+                        <ul class="d-flex justify-content-center">
+                            <li><a href="#"><img class="mx-1" src="img/play-menu-ico.png" alt=""></a></li>
+                            <li><a href="#"><img class="mx-1" src="img/play-menu-ico.png" alt=""></a></li>
+                        </ul>
                     </div>
                 </li>
             </ul>
         </nav>
-        <nav class="destra my_pr-2">
-            <ul class="d-flex justify-content-end">
-                <li class="my_pr">My PlayStation
+        <nav class="d-none d-lg-inline-block destra my_pr-2">
+            <ul class="d-flex w-100 justify-content-end">
+                <li class="my_pr d-flex align-items-center">My PlayStation
+                    <div class="ms-2 chevron">
+                        <img class="my_classic" src="img/chevron-down-solid.svg" alt=""><img class="my_hover" src="img/chevron-down-solid-hover.svg" alt="">
+                    </div>
                     <div class="my_dropdown">
-                    <ul class="d-flex justify-content-center">
-                        <li>prova</li>
-                        <li>prova</li>
-                    </ul>
+                        <ul class="d-flex justify-content-center">
+                            <li><a href="#"><img class="mx-1" src="img/play-menu-ico.png" alt=""></a></li>
+                            <li><a href="#"><img class="mx-1" src="img/play-menu-ico.png" alt=""></a></li>
+                        </ul>
                     </div>
                 </li>
                 <li class="my_pr">Accedi</li>
-                <li class="my_pr">Lens</li>
+                <li class="d-flex align-items-center">
+                    <div class="chevron">
+                        <img class="lens w-100" src="img/lens.svg" alt="">
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>

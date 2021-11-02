@@ -1,9 +1,45 @@
-nav {
-    width: 50%;
+
+
+.my_burgler {
+    align-self: center;
+    width: 3%;
+    margin-right: 10px;
 }
+
+.my_menu_hidden {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+div.my_burgler:hover .my_menu_hidden {
+    display: block;
+}
+
+header {
+    height: 50px;
+    position: relative;
+    border-bottom: 1px solid black;
+}
+
+nav.sinistra {
+    width: 70%;
+    font-size: .9rem;
+}
+
+nav.destra {
+    width: 30%;
+    font-size: .9rem;
+}
+
 
 ul {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 .my_dropdown {
@@ -12,7 +48,10 @@ ul {
     top: 50px;
     left: 0;
     width: 100%;
-    background-color: bisque;
+}
+
+.my_dropdown ul {
+    border-bottom: 1px solid black;
 }
 
 .my_pr {
@@ -33,12 +72,22 @@ ul {
     width: 10%;
 }
 
+.chevron {
+    width: 15px;
+    height: 15px;
+    position: relative;
+}
 
-.my_img_hover {
-    display: none;
+.my_classic,
+.my_hover,
+.lens {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.my_hover{
+    display: none;
 }
 
 
@@ -46,16 +95,16 @@ li:hover .my_dropdown {
     display: inline-block;
 }
 
-li:hover .classic {
+li:hover .my_classic {
     display: none;
 }
 
-li:hover .my_img_hover {
+li:hover .my_hover {
     display: inline-block;
 }
 
-.debug header {
+/* .debug header {
     height: 50px;
     background-color: aqua;
     position: relative;
-}
+} */
